@@ -192,7 +192,7 @@ class User(UserMixin ,db.Model):
 
     # 生成Gravatar URL 随机头像（avatar阿凡达）
     # size大小  default没有注册的使用默认生成头像方式  rating图片等级
-    def gravatar(self, size=100, default='identicon', rating='g'):
+    def gravatar(self, size=100, default='monsterid', rating='g'):
         if request.is_secure:
             url = 'https://secure.gravatar.com/avatar'
         else:
